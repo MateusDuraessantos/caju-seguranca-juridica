@@ -3,10 +3,919 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caju - Segurança Jurídica</title>
+    <title>Segurança Jurídica</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- VueJs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <!-- Link provisório: https://caju-seguranca-juridica.web.app/ -->
+
 </head>
 <body>
-        <h1>Mateus Durães dos Santos</h1>
-        <h3>Ínicio do projeto</h3>
+    <div id="app">
+        <header>
+            <img class="header__img" src="./src/logo.svg" alt="Logo">
+        </header>
+
+        <main>
+            <section class="banner">
+                <img class="banner__grafismo" src="./src/grafismos/graf-1.svg" alt="grafismo">
+                <img class="banner__grafismo--2" src="./src/grafismos/graf-2.svg" alt="grafismo">
+            
+                <div class="body__width">
+                    <div class="banner__grid">
+                        <div class="global-gap__texts">
+                            <h1>
+                                Descubra o segredo para garantir segurança jurídica com multibenefícios
+                            </h1>
+                            <p>
+                                Tudo o que você precisa saber para contratar o seu fornecedor de benefícios e garantir a segurança jurídica da sua empresa!
+                            </p>
+                            <p>
+                                Inscreva-se para receber conteúdos e novidades sobre mudanças legislativas, benefícios corporativos e muito mais, sem juridiquês e do jeito que você entende!
+                            </p>
+                        </div>
+                        <div class="banner__form">
+                            <div class="inputs__container">
+                                <label for="">Nome é seu nome?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual sua empresa?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu cargo?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu email?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Em qual área você trabalha?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Quantos funcionários tem a sua empresa?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu maior desafio?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu telefone?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+
+                            <div class="global-btn__container"><button class="btn__green">Quero saber mais</button></div>
+                            <p class="banner__disclaimer">
+                                A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="garantir">
+                <div class="border__radius radios--white"></div>
+
+                <div class="body__width">
+
+                    <div class="garantir__column">
+                        <img class="garantir__img" src="./src/note.svg"/>
+                        <div class="garantir__text global-gap__texts">
+                            <h1 class="garantir__h1">Como garantir a segurança jurídica do seu RH?</h1>
+
+                            <p>Nos últimos anos, muita coisa mudou em matéria de leis trabalhistas. As regras para oferta de benefícios não ficaram para trás e também passaram por alterações importantes nesse período.</p>
+
+                            <p>Atualmente, a legislação prevê dois modos de pagamento de benefícios de alimentação: através do PAT ou da CLT, sendo que nenhum deles é de natureza salarial.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="global-grid__2__column">
+                        <div class="garantir__card garantir--red">
+                            <img class="garantir__img--2" src="./src/c1-plate.svg" >
+                            <h4 class="garantir__h4">PAT</h4>
+                            <p>Empresas que operam no sistema do lucro real têm um incentivo fiscal de até 4% no Imposto de Renda para valores concedidos aos colaboradores a título de alimentação e refeição.</p>
+                        </div>
+
+                        <div class="garantir__card garantir--green">
+                            <img class="garantir__img--2" src="./src/c1-book.svg" >
+                            <h4 class="garantir__h4">CLT</h4>
+                            <p>Determina que os saldos devem ser individualizados por categoria em conformidade com os artigos 457 § 2º e 458 § 2º e § 5º da CLT.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="karan__container global-grid__2__column">
+                        <div class="garantir__karen">
+                            <img class="garantir__grafismo--1" src="./src/grafismos/graf-7.svg">
+                            <img class="garantir__karen--img" src="./src/karen_fletcher.png">
+                        </div>
+
+                        <div class="global-gap__texts">
+                            <img class="garantir__aspas" src="./src/grafismos/graf-6.svg">
+                            <p class="garantir__aspas--text">
+                                É justamente por conta do contexto legislativo que a sua empresa precisa ter uma atenção especial na hora de contratar o fornecedor de benefícios. Aqui na Caju, acompanhamos de perto todas as alterações para garantir a segurança jurídica da sua empresa
+                            </p>
+
+                            <br>
+                            
+                            <p class="karen">
+                                Karen Fletcher
+                                <br>
+                                Head do Jurídico na Caju
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="parceria">
+                
+                <img class="parceria__grafismo--0" src="./src/grafismos/graf-3.svg">
+                <div class="border__radius radios--red"></div>
+                <img class="parceria__graf--4" src="./src/grafismos/graf-4.svg">
+
+                <div class="body__width">
+                    <h1 class="parceiria__h1">Parceria de verdade tem sabor de confiança</h1>
+
+                    <div class="global-grid__2__column">
+                        <div>
+                            <div class="global-gap__texts">
+                                <p>Como uma empresa 100% brasileira, conhecemos o mercado e as regras do nosso país! <strong>Acreditamos que a segurança jurídica é a base de uma gestão de RH bem-sucedida</strong> e sempre priorizamos a conformidade legal em nossas soluções, para que você possa gerir seu RH com tranquilidade e confiança.</p>
+                                
+                                <p>E mais do que isso: criamos uma série de <strong>materiais para ajudar a sua empresa a estar sempre um passo à frente, preparada para qualquer alteração</strong>, e sabendo que pode contar com a Caju para estar ao seu lado.</p>
+                            </div>
+
+                            <div class="parceria__icons">
+                                <div class="parceria__list">
+                                    <img class="parceria__icon icon--1" src="./src/icons/lock.svg">
+                                    <p class="garantia__texts">Segurança jurídica: o que é e por que ela é importante para o RH?</p>
+                                </div>
+                                
+                                <div class="parceria__list">
+                                    <img class="parceria__icon icon--2" src="./src/icons/loading.svg">
+                                    <p class="garantia__texts">Karen Fletcher fala sobre as mudanças no pagamento de benefícios de alimentação em 2023.</p>
+                                </div>
+
+                                <div class="parceria__list">
+                                    <img class="parceria__icon icon--3" src="./src/icons/shelter.svg">
+                                    <p class="garantia__texts">Nem mais, nem menos: o que você precisa saber sobre segurança jurídica e benefícios em 2023,</p>
+                                </div>
+
+                                <div class="parceria__list">
+                                    <img class="parceria__icon icon--4" src="./src/icons/doc.svg">
+                                    <p class="garantia__texts">É seguro contratar Caju?</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <img class="parceria__people" src="./src/people.png">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="visa">
+                <div class="border__radius radios--white"></div>
+                <div class="body__width">
+                    <div class="global-grid__2__column">
+                        <img class="visa__img" src="./src/cartao.svg"/>
+                        
+                        <div>
+                            <img class="visa__img--logo" src="./src/caju_visa.png"/>
+                            <br>
+                            <br>
+                            <div class="global-gap__texts">
+                                <h1 class="visa__h1">
+                                    uma parceria segura para uma solução completa
+                                </h1>
+                                <p>
+                                    Como uma das maiores operadoras de cartões do mundo, a Visa oferece uma garantia adicional de confiabilidade aos nossos serviços. Sua aceitação em mais de 2 milhões de estabelecimentos ao redor do mundo reforça nossa dedicação em proporcionar uma experiência confiável e flexível aos nossos clientes e colaboradores.
+                                </p>
+                            </div>
+                            
+                            <br><br><br><br>
+
+                            <button class="btn__red">Experimente Caju</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="visa__texts">
+                        <img class="visa__text--ballon" src="./src/ballon.svg">
+                        <h1>
+                            Bom pro RH, bom pro <br> colaborador, bom pra Caju
+                        </h1>
+                        <p>
+                            Aqui na Caju temos a preocupação de jogar junto com você. Nossa parceria sintonizada com as necessidades do seu negócio é o segredo para conquistarmos resultados incríveis juntos.
+                        </p>
+                        <p>E os números não mentem:</p>
+                    </div>
+                    
+                    <div class="visa__cards">
+                        <div class="visa__card">
+                            <img class="visa__card--icon" src="./src/smile.svg">
+                            <p>Olist aumentou o seu eNPS em <strong>7%</strong>.</p>
+                            <img class="visa__card--img" src="./src/olist.png">
+                        </div>
+                        <div class="visa__card">
+                            <img class="visa__card--icon" src="./src/eng.svg">
+                            <p>Dengo reduziu o tempo gasto com a gestão de benefícios em <strong>98%</strong>.</p>
+                            <img class="visa__card--img" src="./src/dengo.svg">
+                        </div>
+                        <div class="visa__card">
+                            <img class="visa__card--icon" src="./src/person.svg">
+                            <p>RD Station <strong>aumentou</strong> o engajamento e o bem-estar dos seus colaboradores.</p>
+                            <img class="visa__card--img" src="./src/rdstation.png">
+                        </div>
+                    </div>
+
+                    <div class="visa__iframe">
+                        <iframe src="https://www.youtube.com/embed/0p3EDZso9aY?si=G1_AdaD7kbk9z1Gs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="global-btn__container">
+                        <button class="btn__red">Leve Caju para sua empresa!</button>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="caju">
+                <img class="caju__graf" src="./src/grafismos/graf-5.svg">
+                <div class="border__radius radios--red"></div>
+
+                <div class="body__width">
+                    <div class="global-grid__2__column">
+                        <div class="caju__texts global-gap__texts">
+
+                            <img class="caju__img" src="./src/logo__white.svg">
+                            
+                            <p>Na Caju, você conta com mais do que produtos: tem um aliado estratégico para potencializar sua gestão de RH. E o melhor, a <strong>tranquilidade de trabalhar com soluções desenvolvidas com total respaldo jurídico.</strong></p>
+                            
+                            <p>Cadastre-se em nosso formulário para receber novidades sobre mudanças legislativas, benefícios corporativos e muito mais, sem juridiquês e do jeito que você entende!</p>
+                            
+                            <button class="btn__green">Quero receber novidades! ↑ </button>
+                        </div>
+
+                        <div class="caju__card--ctn">
+                            <img class="caju__card" src="./src/card.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer>
+            <div class="footer__space">
+                <img class="footer__logo" src="./src/logo.svg" alt="Logo Caju">
+                <div class="footer__icons">
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/face.svg" alt="Facebook">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/x.svg" alt="X">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__space">
+                <p>Caju ® 2023. Todos os direitos reservados.</p>
+                <p class="footer__termos">Política de privacidade | Termos de Uso</p>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        /* font-family: 'Inter', sans-serif; */
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box !important;
+        }
+
+        :root {
+            --orange: #FF7500;
+            --red: #E80537;
+            --green: #59D359;
+            --cinza: #FAFAFA;
+        }
+
+        /* Global styles */
+
+        body {
+            color: white;
+        }
+
+        .global-grid__2__column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .global-btn__container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .body__width {
+            position: relative;
+            max-width: 1200px;
+            margin: auto 50px;
+
+        }
+
+        .global-gap__texts {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            z-index: 6;
+        }
+
+        .global-gap__texts p {
+            line-height: 26px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 32px;
+        }
+
+        .global-container__button {
+            display: flex;
+            justify-content: center;
+            margin: 100px 0;
+            width: 100%;
+        }
+
+        .border__radius {
+            position: absolute;
+            top: -60px;
+            height: 62px;
+            width: 100%;
+            border-radius: 60px 60px 0 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .radios--red {
+            background: var(--red);
+        }
+
+        .radios--white {
+            background: white;
+        }
+
+        /* Buttons */
+
+        .btn__green,
+        .btn__red {
+            border-radius: 8px;
+            height: 50px;
+            width: max-content;
+            padding: 0 20px;
+            color: white;
+            border: none;
+            font-weight: 600;
+            transition: .2s;
+            cursor: pointer;
+            outline: 2px solid transparent;
+        }
+
+        .btn__green {
+            background: var(--green);
+        }
+
+        .btn__green:focus  {
+            background: #0c740c !important;
+            color: white !important;
+            outline-color: transparent !important;
+            
+        }
+
+        .btn__green:hover {
+            background: #53c053;
+        }
+
+        .btn__red {
+            background: var(--red);
+        }
+
+        .btn__red:hover {
+            background: #a70427;
+        }
+
+        /* Header */
+
+        header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 98px;
+            width: 100%;
+            background: var(--cinza);
+            z-index: 1;
+        }
+
+        .header__img {
+            height: 48px;
+        }
+
+        /* Banner */
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            background: var(--red);
+            min-height: 100vh;
+            width: 100%;
+            padding: 60px 0;
+            padding-bottom: 120px;
+            overflow: hidden;
+        }
+
+        .banner .btn__green {
+            font-weight: 600;
+            font-size: 16px;
+            padding: 0 60px;
+        }
+
+        .banner__grid {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            justify-items: center;
+            gap: 66px;
+        }
+
+        .banner__grafismo {
+            position: absolute;
+            bottom: -600px;
+            left: 0;
+        }
+
+        .banner__grafismo--2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .banner__form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: var(--orange);
+            padding: 20px;
+            height: max-content;
+            border-radius: 16px;
+        }
+
+        .inputs__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner__form input {
+            background: white;
+            padding: 20px;
+            padding-left: 15px;
+            border-radius: 16px;
+            height: 32px;
+            border-radius: 6px;
+            margin-top: 4px;
+            border: none;
+            outline: 2px solid transparent;
+            transition: .2s;
+            font-size: 16px;
+        }
+
+        .banner__form input, .banner__form input:focus, .banner__form input:focus::placeholder, 
+        .banner__form input::placeholder {
+            transition: .2s;
+        }
+
+        .banner__form input::placeholder {
+            color: rgb(199, 199, 199);
+        }
+
+        .banner__form input:focus::placeholder {
+            color: red;
+        }
+
+        .banner__form input:focus {
+            color: red;
+            outline: 2px solid red;
+        }
+
+        .banner__disclaimer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Garantir */
+
+        .garantir {
+            position: relative;
+            color: black;
+            padding: 100px 0;
+            z-index: 1;
+            background: white;
+        }
+
+        .garantir__column {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .garantir__h1 {
+            color: var(--red);
+        }
+
+        .garantir__img {
+            width: 100%;
+        
+        }
+
+
+
+        .garantir__card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 14px;
+            padding: 30px;
+            height: 198px;
+            color: white;
+            margin: 100px 0;
+            margin-bottom: 160px;
+        }
+
+        .garantir__h4 {
+            font-weight: 800;
+            font-size: 46px;
+        }
+
+        .garantir--red .garantir__h4 {
+            color: #F18184;
+        }
+
+        .garantir--green .garantir__h4 {
+            color: #9BE59B;
+        }
+
+        .garantir--red {
+            background: #E80537;
+        }
+
+        .garantir--green {
+            background: #59D359;
+        }
+
+        .garantir__img--2 {
+            position: absolute;
+            right: -20px;
+            top: -70px;
+            width: 172px;
+        }
+
+
+        .garantir__grafismo--1 {
+            position: absolute;
+            left: 40px;
+            top: -80px;
+        }
+
+        .karen {
+            font-size: 12px;
+        }
+
+        .karan__container {
+            margin-bottom: 80px;
+        }
+
+        .garantir__karen {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .garantir__karen--img {
+            position: relative;
+            z-index: 2;
+            width: 60%;
+        }
+
+        .garantir__aspas {
+            width: 66px;
+        }
+
+        .garantir__aspas--text {
+            width: 60%;
+        }
+
+
+        /* Parceria */
+
+        .parceria {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 72px;
+            padding: 100px 0 ;
+            padding-top: 60px;
+            background: var(--red);
+        }  
+
+        .parceria__grafismo--0 {
+            position: absolute;
+            right: 0;
+            z-index: 3;
+            top: -480px;
+            width: 300px;
+        }
+
+        .parceiria__h1 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .parceria__graf--4 {
+            position: absolute;
+            left: 0;
+            bottom: -300px;
+            width: 254px;
+            z-index: 3;
+        }
+
+        .parceria .global-grid__2__column {
+            align-items: center;
+        }
+
+        .parceria__icons {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 40px;
+            z-index: 3;
+        }
+
+        .parceria__list {
+            display: flex;
+            gap: 24px;
+            width: 90%;
+        }
+
+        .parceria__icon {
+            width: 30px;
+        }
+
+        .icon--1, .icon--2, .icon--3, .icon--4 {
+            animation-name: icon;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite; 
+        }
+
+        .icon--2 {
+            animation-delay: .2s;
+        }
+
+        .icon--3 {
+            animation-delay: .3s;
+        }
+
+        .icon--4 {
+            animation-delay: .4s;
+        }
+
+        @keyframes icon {
+            0% { transform: translate(0, 0)}
+            25% { transform: translate(0, 0)}
+            40% { transform: translate(2px, 2px)}
+            50% { transform: translate(-1px, -1px)}
+            60% { transform: translate(0, 0)}
+            100% { transform: translate(0, 0)}
+        }
+
+        .parceria__people {
+            height: 800px;
+        }
+
+        /* Visa */
+
+        .visa {
+            position: relative;
+            color: black;
+            padding-bottom: 130px;
+        }
+
+        .visa__img {
+            height: 100%;
+        }
+
+        .visa__img--logo {
+            height: 64px;
+        }
+
+
+        .visa__h1 {
+            color: #59D359;
+        }
+
+        .visa__texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            gap: 50px;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 58px;
+        }
+
+        .visa__texts h1 {
+            color: var(--orange);
+        }
+
+        .visa__text--ballon {
+            position: absolute;
+            right: -40px;
+            top: -80px;
+            width: 166px;
+        }
+
+
+        .visa__cards {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            width: 100%;
+            z-index: 5;
+        }
+
+        .visa__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+            background: var(--cinza);
+            border-radius: 24px;
+            padding: 40px;
+        }
+
+        .visa__card--icon {
+            height: 80px;
+        }
+
+        .visa__card--img {
+            height: 48px;
+            width: 120px;
+            object-fit: contain;
+        }
+
+        .visa__iframe {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 120px 0 70px 0 ;
+        }
+
+        .visa__iframe iframe {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 1000px;
+            height: 540px;
+        }
+
+
+        /* caju */
+
+        .caju {
+            position: relative;
+            background: var(--red);
+            padding-top: 30px;
+        }
+
+        .caju__img {
+            width: 130px; 
+        }
+
+        .caju__graf {
+            position: absolute;
+            right: 0;
+            top: -50%;
+            z-index: 3;
+        }
+
+        .caju__card--ctn{
+            position: relative;
+            z-index: 3;
+        }
+
+        .caju__card {
+            position: absolute;
+            height: 550px;
+            bottom: 0;
+        }
+
+        .caju__texts {
+            padding-bottom: 120px;
+        }
+
+        /* Footer */
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            background: var(--cinza);
+            width: 100%;
+            height: 130px;
+            color: #767676;
+            gap: 20px;
+            padding: 20px 40px;
+            font-weight: 500;
+        }
+
+        footer hr {
+            border: none;
+            border-bottom: 1px solid #767676;
+            
+        }
+
+        .footer__logo {
+            height: 26px;
+        }
+
+        .footer__space {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer__icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer__links img{
+            transition: .1s;
+        }
+        .footer__links img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data(){
+                return {
+                    
+                }
+            }
+        })
+    </script>
 </body>
 </html>
