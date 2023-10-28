@@ -90,7 +90,7 @@
 
                 <hr>
 
-                <div class="global-grid__2__column">
+                <div class="garantir__cards global-grid__2__column">
                     <div class="garantir__card garantir--red">
                         <img class="garantir__img--2" src="./src/c1-plate.svg" >
                         <h4 class="garantir__h4">PAT</h4>
@@ -170,7 +170,9 @@
                         </div>
                     </div>
                     
-                    <img class="parceria__people" src="./src/people.png">
+                    <div class="parceria__people--responsive">
+                        <img class="parceria__people" src="./src/people.png">
+                    </div>
                 </div>
 
             </div>
@@ -245,10 +247,10 @@
         </section>
 
         <section class="caju">
-            <img class="caju__graf" src="./src/grafismos/graf-5.svg">
             <div class="border__radius radios--red"></div>
-
+            
             <div class="body__width">
+                <img class="caju__graf" src="./src/grafismos/graf-5.svg">
                 <div class="global-grid__2__column">
                     <div class="caju__texts global-gap__texts">
 
@@ -336,10 +338,9 @@ body {
 }
 
 .body__width {
-    position: relative;
     max-width: 1200px;
     margin: auto 50px;
-
+    z-index: 2;
 }
 
 .global-gap__texts {
@@ -565,8 +566,6 @@ header {
 
 }
 
-
-
 .garantir__card {
     position: relative;
     display: flex;
@@ -574,7 +573,7 @@ header {
     gap: 20px;
     border-radius: 14px;
     padding: 30px;
-    height: 198px;
+    min-height: 198px;
     color: white;
     margin: 100px 0;
     margin-bottom: 160px;
@@ -818,6 +817,8 @@ header {
 }
 
 .visa__iframe iframe {
+    position: relative;
+    z-index: 5;
     border-radius: 20px;
     width: 100%;
     max-width: 1000px;
@@ -838,9 +839,11 @@ header {
 }
 
 .caju__graf {
+    pointer-events: none;
     position: absolute;
     right: 0;
-    top: -50%;
+    top: -75%;
+    width: 250px;
     z-index: 3;
 }
 
@@ -851,7 +854,7 @@ header {
 
 .caju__card {
     position: absolute;
-    height: 550px;
+    max-height: 550px;
     bottom: 0;
 }
 
@@ -904,6 +907,172 @@ footer hr {
 <!-- CSS responsividade -->
 <style>
 
+
+@media only screen and (max-width: 1000px ) { 
+
+    .banner__grid, .global-grid__2__column, .garantir__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body__width {
+        width: calc(100% - 20px);
+    }
+
+    .banner__grafismo {
+        width: 200px;
+    }
+
+    /* Visa */
+
+    .visa__cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .visa__card {
+        box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.2);
+        padding: 14px;
+    }
+ 
+    .visa__img, .visa__texts {
+        width: 100%;
+    }
+ 
+    .visa .btn__red {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+ 
+    .visa__text--ballon {
+        right: -10px;
+        top: -120px;
+    }
+ 
+    /* Parceria */
+
+    .parceria__grafismo--0 {
+        width: 200px;
+        top: -290px;
+    }
+    
+    .parceria__graf--4 {
+        display: none;
+    }
+
+    .parceria__people--responsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    .parceria__people {
+        width: calc(100% + 20px);
+        margin: auto;
+        object-fit: cover;
+    }
+
+    /* Caju */
+
+    .caju__card {
+        position: initial;
+    }
+    
+    .caju .global-grid__2__column {
+        gap: 0;
+    }
+
+    .caju__graf {
+        width: 140px;
+        top: -20%;
+    }
+    
+    .caju__texts {
+        padding-bottom: 40px;
+    }
+    
+    .caju__card {
+        width: 100%;    
+        object-fit: contain;
+        object-position: center bottom;
+    }
+    
+    /* Garantir */
+
+    .garantir {
+        padding: 0 0 40px 0;
+    }
+
+    .garantir__card {
+        margin: 0;
+    }
+
+    .garantir__aspas--text {
+        width: 100%;
+    }
+ 
+    .karan__container {
+        margin-top: 100px;
+    }
+    
+    .garantir__img--2 {
+        top: -21px;
+        right: 16px;
+        width: 122px;
+    }
+
+    .garantir__cards {
+        gap: 20px;
+    }
+    
+    .garantir hr {
+        display: none;
+        opacity: 0;
+        border: none;
+    }
+
+    /* Visa */
+
+    .visa__iframe {
+        width: 100%;
+    }
+    
+    .visa__iframe iframe {
+        width: 100%;
+    }
+
+    .visa__iframe iframe {
+        height: 340px;
+    }
+
+    .visa__card--icon {
+        height: 60px;
+    }
+
+    .visa__iframe {
+        margin-top: 56px;    
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    header {
+        height: 60px;
+    }
+
+    .header__img {
+        height: 50%;
+    }
+
+    .banner__form {
+        gap: 10px;   
+    }
+
+    .banner__form .btn__green {
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+}
 </style>
 
 </html>
