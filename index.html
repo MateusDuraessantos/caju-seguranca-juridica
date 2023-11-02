@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança Jurídica</title>
+    <link rel="shortcut icon" type="imagex/png" href="./src/logoaba.svg">
+    <title>Caju - Segurança Jurídica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -117,13 +118,10 @@
                             É justamente por conta do contexto legislativo que a sua empresa precisa ter uma atenção especial na hora de contratar o fornecedor de benefícios. Aqui na Caju, acompanhamos de perto todas as alterações para garantir a segurança jurídica da sua empresa
                         </p>
 
-                        <br>
-                        
-                        <p class="karen">
-                            Karen Fletcher
-                            <br>
-                            Head do Jurídico na Caju
-                        </p>
+                        <div class="karen">
+                            <p>Karen Fletcher</p>
+                            <p>Head do Jurídico na Caju</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,7 +292,7 @@
             </div>
         </div>
         <hr>
-        <div class="footer__space">
+        <div class="footer__diretos">
             <p>Caju ® 2023. Todos os direitos reservados.</p>
             <p class="footer__termos">Política de privacidade | Termos de Uso</p>
         </div>
@@ -620,6 +618,11 @@ header {
     font-size: 12px;
 }
 
+
+.karen br { 
+    height: 10px;
+}
+
 .karan__container {
     margin-bottom: 80px;
 }
@@ -898,7 +901,7 @@ footer hr {
     height: 26px;
 }
 
-.footer__space {
+.footer__space, .footer__diretos {
     display: flex;
     justify-content: space-between;
 }
@@ -921,6 +924,10 @@ footer hr {
 
 
 @media only screen and (max-width: 1000px ) { 
+
+    .banner__grafismo--2, .parceria__graf--4, .garantir hr, .caju__graf, .banner__grafismo {
+        display: none;
+    }
 
     h1 {
         font-size: 22px;
@@ -955,16 +962,7 @@ footer hr {
 
     /* Visa */
 
-    .visa__cards {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-    
-    .visa__card {
-        box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.2);
-        padding: 14px;
-    }
- 
+
     .visa__texts--container {
         margin-top: 0
     }
@@ -1003,14 +1001,16 @@ footer hr {
  
     /* Parceria */
 
+
+    .parceria {
+        padding-top: 22px;
+    }
+
     .parceria__grafismo--0 {
         width: 100px;
         top: -168px;
     }
     
-    .parceria__graf--4 {
-        display: none;
-    }
 
     .parceria__people--responsive {
         display: flex;
@@ -1028,6 +1028,10 @@ footer hr {
 
     /* Caju */
 
+    .caju {
+        padding-top: 0;
+    }
+
     .caju__card {
         position: initial;
     }
@@ -1036,9 +1040,7 @@ footer hr {
         gap: 0;
     }
 
-    .caju__graf {
-        display: none;
-    }
+
     
     .caju__texts {
         padding-bottom: 40px;
@@ -1056,6 +1058,14 @@ footer hr {
         padding: 0 0 40px 0;
     }
 
+    .garantir__column {
+        margin-bottom: 40px;
+    }
+
+    .garantir__img {
+        margin-bottom: 40px;
+    }
+
     .garantir__card {
         margin: 0;
     }
@@ -1066,8 +1076,9 @@ footer hr {
  
     .karan__container {
         margin-top: 100px;
+        gap: 20px;
     }
-    
+
     .garantir__img--2 {
         top: -21px;
         right: 16px;
@@ -1077,12 +1088,7 @@ footer hr {
     .garantir__cards {
         gap: 20px;
     }
-    
-    .garantir hr {
-        display: none;
-        opacity: 0;
-        border: none;
-    }
+
 
     /* Visa */
 
@@ -1099,7 +1105,7 @@ footer hr {
     }
 
     .visa__card--icon {
-        height: 60px;
+        width: 100%;
     }
 
     .visa__iframe {
@@ -1108,8 +1114,47 @@ footer hr {
 
 }
 
+@media only screen and (max-width: 800px) {
+
+    .parceria__icons {
+        padding: 0 20px;
+        gap: 30px;
+        line-height: 24px;
+    }
+
+    .parceria__list {
+        width: 96%;
+    }
+
+    /* visa */
+
+    .visa__cards {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    
+   .visa__card {
+        display: grid;
+        grid-template-columns: 24px 1fr 80px;
+        box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.2);
+        padding: 14px;
+        gap: 14px;
+    }
+
+    .visa__card--img {
+        width: 100%;
+    }
+ 
+}
+
 
 @media only screen and (max-width: 500px) {
+
+    p {
+        font-size: 14px;
+    }
+    
+    /* header */
 
     header {
         height: 60px;
@@ -1128,10 +1173,21 @@ footer hr {
         margin-bottom: 16px;
     }
 
+    /* garantir */
+
+    .garantir__card {
+        padding: 20px;
+    }
+
     /* Footer */
 
     footer {
         padding: 20px;
+    }
+    
+    .footer__diretos {
+        flex-direction: column;
+        align-items: center;
     }
 }
 </style>
