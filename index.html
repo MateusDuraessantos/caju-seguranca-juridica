@@ -6,8 +6,38 @@
     <link rel="shortcut icon" type="imagex/png" href="./src/logoaba.svg">
     <title>Caju - Segurança Jurídica</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Tag Manager (parte do head) -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MSKBQ9FX');
+    </script>
+    <!-- Fim do Google Tag Manager (parte do head) -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSKBQ9FX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- Fim do Google Tag Manager (noscript) -->
+
+    <!-- Meta Pixel Code do Facebook -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '7360381497366216');
+        fbq('track', 'PageView');
+    </script>
+    
     <header>
         <img class="header__img" src="./src/logo.svg" alt="Logo">
     </header>
@@ -30,44 +60,100 @@
                             Inscreva-se para receber conteúdos e novidades sobre mudanças legislativas, benefícios corporativos e muito mais, sem juridiquês e do jeito que você entende!
                         </p>
                     </div>
-                    <div class="banner__form">
-                        <div class="inputs__container">
-                            <label for="">Nome é seu nome?</label>
-                            <input type="text" placeholder="Digite aqui">
+             
+                    <!-- Formulário -->
+
+                    <noscript>
+                        <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=7360381497366216&ev=PageView&noscript=1" />
+                    </noscript>
+
+                    <!-- End Meta Pixel Code do Facebook -->
+                    
+                    <div class="forms">
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+                
+                        <div class="forms__topoform">
+                            Preencha o formulário <br> para baixar o nosso e-book gratuito
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Qual sua empresa?</label>
-                            <input type="text" placeholder="Digite aqui">
+                        
+                        <div class="forms__ctn">
+                            <label for="nome">Qual é o seu nome?</label>
+                            <input class="forms__input" type="text" id="nome" name="nome" required >
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Qual seu cargo?</label>
-                            <input type="text" placeholder="Digite aqui">
+                
+                        <div class="forms__ctn">
+                            <label for="empresa">Qual é a sua empresa?</label>
+                            <input class="forms__input" type="text" id="empresa" name="empresa" required >
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Qual seu email?</label>
-                            <input type="text" placeholder="Digite aqui">
+                
+                        <div class="forms__ctn">
+                            <label for="cargo__select">Qual é o seu cargo?</label>
+                            <div class="seletor">
+                                <select id="cargo__select" name="cargo" required class="forms__select">
+                                    <option value="" disabled  selected></option>
+                                    <option value="Estagiário">Estagiário</option>
+                                    <option value="Assistente">Assistente</option>
+                                    <option value="Analista">Analista</option>
+                                    <option value="Coordenador/gerente">Coordenador/gerente</option>
+                                    <option value="Sócio/Diretor">Sócio/Diretor</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Em qual área você trabalha?</label>
-                            <input type="text" placeholder="Digite aqui">
+                
+                        <div class="forms__ctn">
+                            <label for="email">Qual é o seu email?</label>
+                            <input class="forms__input" type="email" id="email" name="email" required>
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Quantos funcionários tem a sua empresa?</label>
-                            <input type="text" placeholder="Digite aqui">
+                
+                        <div class="forms__ctn">
+                            <label for="area__select">Em qual área você trabalha?</label>
+                            <div class="seletor">
+                                <select id="area__select" name="area" required class="forms__select">
+                                    <option value="" disabled selected></option>
+                                    <option value="RH">RH</option>
+                                    <option value="Compras">Compras</option>
+                                    <option value="Financeiro/Contabilidade">Financeiro/Contabilidade</option>
+                                    <option value="Administrativo">Administrativo</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Qual seu maior desafio?</label>
-                            <input type="text" placeholder="Digite aqui">
+                
+                        <div class="forms__ctn">
+                            <label for="num_funcionarios">Quantos funcionários tem a sua empresa?</label>
+                            <input class="forms__input" type="text" id="num_funcionarios" name="num_funcionarios" required >
                         </div>
-                        <div class="inputs__container">
-                            <label for="">Qual seu telefone?</label>
-                            <input type="text" placeholder="Digite aqui">
+                        
+                
+                        <div class="forms__ctn">
+                            <label for="desafio_empresa__select">Qual é o seu maior desafio?</label>
+                            <div class="seletor">
+                                <select id="desafio_empresa__select" name="desafio_empresa" required class="forms__select">
+                                    <option value=""  disabled selected></option>
+                                    <option value="Atração e seleção">Atração e seleção</option>
+                                    <option value="Retenção de colaboradores">Retenção de colaboradores</option>
+                                    <option value="Desenvolvimento e treinamento">Desenvolvimento e treinamento</option>
+                                    <option value="Plano de carreira">Plano de carreira</option>
+                                    <option value="Cultura corporativa">Cultura corporativa</option>
+                                    <option value="Reduzir os custos com RH">Reduzir os custos com RH</option>
+                                    <option value="Otimizar o tempo do meu time de RH">Otimizar o tempo do meu time de RH</option>
+                                </select>
+                            </div>
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="telefone">Qual é o seu telefone?</label>
+                            <input class="forms__input" type="tel" id="telefone" name="telefone" required >
+                        </div>
+                        
+                        <div class="forms__button--container">
+                            <input class="forms__sc-button" data-hash="003/001-001.059:018;001" type="submit" value="Quero baixar" id="submitButton">
                         </div>
 
-                        <div class="global-btn__container"><button class="btn__green">Quero saber mais</button></div>
-                        <p class="banner__disclaimer">
+                        <p class="forms__disclaimer">
                             A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
-                        </p>
+                        </p> 
                     </div>
                 </div>
             </div>
@@ -299,6 +385,114 @@
     </footer>
 </body>
 
+              
+<!-- Google Tag Manager (evento de clique no botão) -->
+<script>
+    document.getElementById("submitButton").addEventListener("click", function () {
+        // Registre o evento de clique no botão "Quero baixar"
+        dataLayer.push({
+            'event': 'formSubmission',
+            'formType': 'Webinar Engajamento colaborador'
+        });
+    });
+
+    // Função para obter parâmetros UTM da URL
+    function getUTMParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmParameters = {};
+
+        utmParameters['str_utm_source'] = urlParams.get('utm_source') || '';
+        utmParameters['str_utm_medium'] = urlParams.get('utm_medium') || '';
+        utmParameters['str_utm_campaign'] = urlParams.get('utm_campaign') || '';
+        utmParameters['str_utm_term'] = urlParams.get('utm_term') || '';
+
+        return utmParameters;
+    }
+
+    var tel = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 00000-0009';
+    };
+
+    var options = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(tel.apply({}, arguments), options);
+        }
+    };
+
+    $('#telefone').mask(tel, options);
+    var botaoEnviar = document.getElementById("submitButton");
+    botaoEnviar.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const empresa = document.getElementById('empresa').value;
+        const cargo = document.getElementById('cargo__select').value;
+        const area = document.getElementById('area__select').value;
+        const num_funcionarios = document.getElementById('num_funcionarios').value;
+        const telefone = document.getElementById('telefone').value;
+        const desafio_empresa = document.getElementById('desafio_empresa__select').value;
+        const email = document.getElementById('email').value;
+
+        // Obter parâmetros UTM da URL
+        const utmParameters = getUTMParameters();
+
+        const telLimpo = telefone.replace(/\D/g, '');
+        const telCompleto = '55' + telLimpo;
+
+        // Obter a data e hora atual
+        let dataHoraAtual = new Date();
+
+        // Formatar a data e hora no padrão brasileiro
+        let dataHoraFormatada = new Date().toLocaleString('pt-BR');
+
+        if (
+            nome === "" ||
+            nome === undefined ||
+            empresa === "" ||
+            empresa === undefined ||
+            cargo === "" ||
+            cargo === undefined ||
+            area === "" ||
+            area === undefined ||
+            telefone === "" ||
+            telefone === undefined ||
+            num_funcionarios === "" ||
+            num_funcionarios === undefined ||
+            desafio_empresa === ""
+        ) {
+            alert('Preencha todos os campos.');
+        } else {
+            // Mesclar os parâmetros UTM com os outros dados
+            const data = JSON.stringify({
+                str_lp_name: "Ebook tendências Benefícios",
+                str_user_name: nome,
+                str_company_name: empresa,
+                str_email: email,
+                str_business_unit: area,
+                str_form_job: cargo,
+                str_user_challenge: desafio_empresa,
+                nr_phone: telCompleto,
+                dt_created_date: dataHoraFormatada,
+                str_employees_number: num_funcionarios,
+                ...utmParameters // Inclui os parâmetros UTM mapeados corretamente
+            });
+
+            fetch("https://cloud.fala.caju.com.br/79490316949496", { method: 'POST', body: data })
+                    .then((response) => response.json())
+                .then((resposta) => {
+                    if (resposta.statusCode === 200) {
+                    dataLayer.push({'event': '003/001-001.059:018;001'});
+                        window.location.href = "http://cloud.fala.caju.com.br/obrigado";
+                        
+                    } else {
+                        alert('Erro ao inserir dados.');
+                    }
+                });
+        }
+    });
+</script>
+
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Inter', sans-serif; */
@@ -346,6 +540,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 100px;
     z-index: 6;
 }
 
@@ -469,9 +664,10 @@ header {
 .banner__grid {
     margin: auto;
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 66px;
+    gap: 180px;
+    width: calc(100% - 160px);
 }
 
 .banner__grafismo {
@@ -488,57 +684,143 @@ header {
     top: 0;
 }
 
-.banner__form {
+.banner__disclaimer {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Formulário */
+
+.forms {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background: var(--orange);
+    gap: 16px;
+    margin: 0 auto;
     padding: 20px;
-    height: max-content;
-    border-radius: 16px;
+    border-radius: 10px;
+    background-color: #FF7500;
 }
 
-.inputs__container {
-    display: flex;
-    flex-direction: column;
+.forms__topoform {
+    text-align:center;
+    font-size:22px;
+    padding:20px 0px;
+    color:#fff;
+    font-weight:600;
+    border-radius:20px 20px 0px 0px
 }
 
-.banner__form input {
+
+.forms__group {
+    margin-bottom: 10px;
+}
+
+
+.forms__input, .forms__select {
     background: white;
-    padding: 20px;
     padding-left: 15px;
     border-radius: 16px;
-    height: 32px;
+    height: 40px;
+    width: 100%;
     border-radius: 6px;
-    margin-top: 4px;
     border: none;
     outline: 2px solid transparent;
     transition: .2s;
     font-size: 16px;
 }
 
-.banner__form input, .banner__form input:focus, .banner__form input:focus::placeholder, 
-.banner__form input::placeholder {
+.forms__select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: rgb(199, 199, 199);
+    color: black;
+}
+
+.forms__input {
+    margin-top: 4px;
+}
+
+.seletor {
+    margin-top: 4px;
+    position: relative;
+}
+
+.seletor::after {
+    content: '›';
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    top: 7px;
+    transform: rotate(90deg) ;
+    pointer-events: none;
+}
+
+.forms__input::placeholder, .forms__select::placeholder {
+    color: rgb(199, 199, 199);
     transition: .2s;
 }
 
-.banner__form input::placeholder {
-    color: rgb(199, 199, 199);
-}
-
-.banner__form input:focus::placeholder {
+.forms__input:focus::placeholder {
     color: red;
 }
 
-.banner__form input:focus {
+.forms__input:focus {
     color: red;
     outline: 2px solid red;
 }
 
-.banner__disclaimer {
+.forms__button--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.forms__sc-button {
+    display: block;
+    background: #59D359;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 50px;
+    line-height: normal;
+    padding: 0 60px;
+    width: max-content;
+    margin: auto;
+    font-weight: 600;
+    margin: 6px 0px 0px 0px;
+    cursor: pointer;
+    border: none;
+    transition: .2s;
+}
+
+.forms__sc-button:hover {
+    background: #53c053;
+}
+
+.forms__sc-button:focus {
+    background: #0c740c;
+    color: white;
+    outline-color: transparent;
+}
+
+.forms__ctn {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms__disclaimer {
     font-size: 12px;
     text-align: center;
 }
+
+
+
 
 /* Garantir */
 
@@ -960,8 +1242,14 @@ footer hr {
         padding-top: 44px;
     }
 
-    /* Visa */
+    /* Formulário */
 
+    .banner__grid {
+        width: 100%;
+        gap: 40px;
+    }
+
+    /* Visa */
 
     .visa__texts--container {
         margin-top: 0
